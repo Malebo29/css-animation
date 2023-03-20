@@ -1,8 +1,20 @@
 #who {
-background-color: aquamarine;
+background-color: darkcyan;
+height: 600px;
 }
 
 #maleboPic {
+    width: 50%; 
     height: 50%;
-    width: 50%;
+    transition: transform 1s ease-in-out;
+}
+
+#maleboPic:hover {
+    animation: move-along-x-axis;
+}
+
+@keyframes move-along-x-axis {
+    100% {
+        transform: translateX(100%)
+    }
 }
